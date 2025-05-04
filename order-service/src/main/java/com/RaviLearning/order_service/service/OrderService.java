@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.RaviLearning.order_service.model.OderLineItems;
 import com.RaviLearning.order_service.model.Order;
@@ -14,6 +15,7 @@ import com.RaviLearning.order_service.model.orderLineitemsDto;
 import com.RaviLearning.order_service.repository.OderRepository;
 
 @Service
+@Transactional
 public class OrderService {
 	
 	
