@@ -1,0 +1,6 @@
+com\RaviLearning\Inventory_service\InventoryServiceApplication.class
+com\RaviLearning\Inventory_service\service\InventoryService.class
+com\RaviLearning\Inventory_service\contoller\InventoryController.class
+com\RaviLearning\Inventory_service\model\InventoryResponce.class
+com\RaviLearning\Inventory_service\repository\Inventoryrepository.class
+com\RaviLearning\Inventory_service\model\Inventory.class

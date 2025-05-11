@@ -9,6 +9,7 @@ import com.RaviLearning.Inventory_service.model.Inventory;
 import com.RaviLearning.Inventory_service.repository.Inventoryrepository;
 
 @SpringBootApplication
+//@EnableEurekaClient
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
@@ -24,9 +25,8 @@ public class InventoryServiceApplication {
 
 			Inventory inventory1 = new Inventory();
 			inventory1.setSkuCode("Iphone-13-red");
-			inventory1.setQuantity(100);
-			
-			
+			inventory1.setQuantity(0);
+
 			inventoryrepository.save(inventory);
 			inventoryrepository.save(inventory1);
 		};

@@ -1,4 +1,6 @@
 package com.RaviLearning.Inventory_service.repository;
+
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,8 +11,7 @@ import com.RaviLearning.Inventory_service.model.Inventory;
 
 public interface Inventoryrepository extends JpaRepository<Inventory, Long> {
 
-	@Query("SELECT i.skuCode FROM Inventory i WHERE i.skuCode = :skuCode")
-	Optional<Inventory> findBySkucode(@Param("skuCode") String skuCode);
-	
+	@Query(value="SELECT * FROM Inventory  WHERE sku_code = :skuCode",nativeQuery = true)
+	List<Inventory> findBySkucode(@Param("skuCode") String skuCode);
 
 }
